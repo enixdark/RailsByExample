@@ -6,14 +6,16 @@ gem 'rails', '3.2.21'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'bootstrap-sass'
-gem 'autoprefixer-rails'
 
 group :development do
   gem 'pry'
   gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'annotate'
+  gem 'bootstrap-sass'
+  gem 'autoprefixer-rails'
+  gem 'bcrypt'
+  gem 'bcrypt-ruby', '~> 3.0.0'
 end
 group :test do
   gem 'rspec'
