@@ -18,7 +18,7 @@ Rails.application.configure do
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
-
+  config.force_ssl = true
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 
@@ -35,7 +35,7 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-
+  config.web_console.automount = true
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
