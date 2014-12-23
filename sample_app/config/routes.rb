@@ -1,12 +1,33 @@
 Rails.application.routes.draw do
 
-  resources :users
-
-  get 'contact' => 'pages#contact'
-  get 'help' => 'pages#help'
-  get 'about' => 'pages#about'
-  get 'signup' => 'users#new'
+  # get 'sessions/new'
   root 'pages#home'
+  resources :users
+  controller :users do
+    get 'signup' => :new
+    # post 'signup' => :create
+  end
+
+  controller :pages do
+    get 'contact' => :contact
+    get 'help' => :help
+    get 'about' => :about
+  end
+
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+  # get 'contact' => 'pages#contact'
+  # get 'help' => 'pages#help'
+  # get 'about' => 'pages#about'
+  # get 'signup' => 'users#new'
+  # root 'pages#home'
+  # get 'login' => 'sessions#new'
+  # post 'login' => 'sessions#create'
+  # delete 'logout' => 'sessions#destroy'
+
 
   # match :root
   # The priority is based upon order of creation: first created -> highest priority.

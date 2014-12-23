@@ -11,7 +11,7 @@
 #
 require 'bcrypt'
 class User < ActiveRecord::Base
-    # has_secure_password
+    has_secure_password
     attr_accessor :password, :password_confirmation
 
     validates_presence_of :password, :on => :create
@@ -29,6 +29,12 @@ class User < ActiveRecord::Base
       unless pass.blank?
         self.password_digest = BCrypt::Password.create(pass)
       end
+    end
+
+    def User.digest(string)
+        cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+            BCrypt::Engine.cost
+        BCrypt::Password.create(string, cost: cost)
     end
 
 end

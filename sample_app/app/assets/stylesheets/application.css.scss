@@ -76,6 +76,10 @@ a.signup_button {
     padding: 20px;
 }
 
+
+a.link {
+    color: lawngreen;
+}
 a {
     /*color: #09c;*/
     color: #ffffff;
@@ -85,10 +89,11 @@ a {
         color: #ffc64c;
         text-decoration: underline;
     }
-    &:visited{
-        color: #6af87b;
 
-    }
+//    &:visited{
+//        color: #6af87b;
+//
+//    }
 }
 
 nav {
@@ -110,12 +115,26 @@ nav {
             font-weight: bold;
             &:hover {
                 text-decoration: underline;
-
             }
-            &:visited {
-                color: #ffffff;
-            }
+//            &:visited {
+//                color: #ffffff;
+//            }
         }
+    }
+}
+
+//.accounts{
+//    white-space:normal;
+//}
+.dropdown-menu{
+    white-space:normal;
+    min-width: 100px;
+    border-radius:0;
+    box-shadow: 0 0 0;
+    li{
+        list-style-type: none;
+        padding: 0;
+        display:block;
     }
 }
 
