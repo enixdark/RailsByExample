@@ -1,8 +1,8 @@
 require 'test/unit'
-require_relative '../apps/extension_class'
-require_relative '../apps/function'
-require_relative '../apps/object'
-require_relative '../apps/module'
+require_relative '../apps/monday/extension_class'
+require_relative '../apps/monday/function'
+require_relative '../apps/monday/object'
+require_relative '../apps/monday/module'
 
 require 'byebug'
 

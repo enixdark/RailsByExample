@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
 
   end
 
+
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     # debugger
@@ -15,6 +16,7 @@ class SessionsController < ApplicationController
       render 'new'
     end
   end
+
 
   def current_user
     User.find_by(id: session[:user_id])
