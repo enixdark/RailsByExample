@@ -1,4 +1,4 @@
 RailsByExample
 ==============
 
-Sample from rails by tutorial 
+Ruby/Rails Samples from Ebook, Tutorial 
