@@ -1,0 +1,20 @@
+{
+	1:{
+		"cpu":{
+			"info":"Core i3 M2100",
+			"price":320
+		},
+		"display":{
+			"info":"LG Oled 21 inch",
+			"price":120
+		},
+		"keyboard":{
+			"info":"China",
+			"price":1
+		},
+		"mouse":{
+			"info":"shanghai",
+			"price":1
+		}
+	}
+}
